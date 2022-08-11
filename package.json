@@ -11,6 +11,7 @@
   "author": "itstillon@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@types/pino": "^7.0.5",
     "typescript": "^4.7.4"
   },
   "dependencies": {
