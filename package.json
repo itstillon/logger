@@ -1,0 +1,19 @@
+{
+  "name": "@itstillon/logger",
+  "version": "1.0.0",
+  "description": "Custom logger",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "itstillon@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "pino": "^8.4.0"
+  }
+}
