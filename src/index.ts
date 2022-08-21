@@ -1,19 +1,43 @@
-import pino from "pino";
+import winston from "winston";
 
-const logger = pino({
-    base: { author: "itstillon" },
-    formatters:{
-        level: (label: string) => ({ label })
-    }
-});
+const { combine, errors, timestamp, splat, json } = winston.format;
 
-logger.on('level-change', (lvl: string, val: number, prevLvl: string, prevVal: number) => {
-    if (logger !== this) {
-        console.log("Child logger");
-        return;
-    }
+const logger = winston.createLogger({
 
-    console.log('%s (%d) was changed to %s (%d)', prevLvl, prevVal, lvl, val)
+    // default log level is "info"
+    level: "info",
+
+    // combining multiple formats to get the desired output
+    format: combine(
+
+        // required to log errors thrown by the application; ignored otherwise
+        errors({ stack: true }),
+
+        // enables string interpolation of messages
+        splat(),
+
+        // adds timestamp to all log messages
+        timestamp(),
+
+        // default log format is JSON
+        json()
+    ),
+
+    transports: [
+        
+        // logs will be written to console / stdout
+        new winston.transports.Console({
+
+            // catch and log `uncaughtException` events from the application
+            handleExceptions: true,
+
+            // catch and log `uncaughtRejection` events from the application
+            handleRejections: true
+        })
+    ],
+
+    // generic metadata applied to all logs
+    defaultMeta: { type: "application" }
 });
 
 export default logger;

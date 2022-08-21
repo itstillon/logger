@@ -1,12 +1,4 @@
-declare const logger: import("pino").Logger<{
-    base: {
-        author: string;
-    };
-    formatters: {
-        level: (label: string) => {
-            label: string;
-        };
-    };
-}>;
+import winston from "winston";
+declare const logger: winston.Logger;
 export default logger;
 //# sourceMappingURL=index.d.ts.map

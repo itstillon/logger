@@ -1,6 +1,6 @@
 {
   "name": "@itstillon/logger",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Custom logger",
   "main": "lib/index.js",
   "types": "lib",
@@ -10,11 +10,11 @@
   },
   "author": "itstillon@gmail.com",
   "license": "ISC",
-  "devDependencies": {
-    "@types/pino": "^7.0.5",
-    "typescript": "^4.7.4"
-  },
   "dependencies": {
-    "pino": "^8.4.0"
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "@types/winston": "^2.4.4",
+    "typescript": "^4.7.4"
   }
 }
