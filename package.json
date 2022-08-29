@@ -4,6 +4,7 @@
   "description": "Custom logger",
   "main": "src/index.js",
   "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
   "scripts": {
     "build": "tsc"
   },
