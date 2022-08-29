@@ -1,6 +1,6 @@
 {
   "name": "@itstillon/logger",
-  "version": "1.0.0-rc.6",
+  "version": "1.0.0-rc.7",
   "description": "Custom logger",
   "main": "src/index.js",
   "types": "lib/index.d.ts",
