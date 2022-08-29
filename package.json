@@ -1,10 +1,12 @@
 {
   "name": "@itstillon/logger",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0-rc.4",
   "description": "Custom logger",
   "main": "lib/index.js",
   "types": "lib",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc"
   },
