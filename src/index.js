@@ -40,4 +40,4 @@ const logger = winston.createLogger({
     defaultMeta: { type: "application" }
 });
 
-module.exports = logger;
+export default logger;
