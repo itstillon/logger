@@ -16,6 +16,13 @@
     "enabled" "2.0.x"
     "kuler" "^2.0.0"
 
+"@itstillon/logger@file:":
+  "resolved" "file:"
+  "version" "1.0.0-rc.9"
+  dependencies:
+    "@itstillon/logger" "file:"
+    "winston" "^3.8.1"
+
 "@types/winston@^2.4.4":
   "integrity" "sha512-BVGCztsypW8EYwJ+Hq+QNYiT/MUyCif0ouBH+flrY66O5W+KIXAMML6E/0fJpm7VjIzgangahl5S03bJJQGrZw=="
   "resolved" "https://registry.npmjs.org/@types/winston/-/winston-2.4.4.tgz"
@@ -95,9 +102,7 @@
   "version" "0.3.2"
 
 "is-stream@^2.0.0":
-  "integrity" "sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg=="
-  "resolved" "https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz"
-  "version" "2.0.1"
+  "version" "2.0.0"
 
 "kuler@^2.0.0":
   "integrity" "sha512-Xq9nH7KlWZmXAtodXDDRE7vs6DU1gTU8zYDHDiWLSip45Egwq3plLHzPn27NgvzL2r1LMPC1vdqh98sQxtqj4A=="
